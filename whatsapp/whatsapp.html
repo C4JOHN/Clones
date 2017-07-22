@@ -1,0 +1,219 @@
+<DOCTYPE html>
+    <html>
+        <head> <title>Whatsapp Web</title>
+        <link type="text/css" href="bootstrap.min.css" rel="stylesheet"/>
+        <link type="text/css" href="font-awesome.min.css" rel="stylesheet"/>
+        </head>
+<div class="container-fluid">
+<style>
+    .container-fluid{
+        width: 100%;
+    }
+    .topbarLeft{
+        background-color: #f2f2f2;
+        height: 60px;
+        border-style: solid;
+        border-left: 0px;
+        border-top: 0px;
+        border-bottom: 0px;
+    }
+    .profile{
+        margin-top:10px;
+    }
+    .topLeftIcons{
+       margin-top: 20px;
+        margin-left: 30px;
+        margin-right: 10px;
+       float: right; 
+    }
+    .topbarRight{
+        background-color: #f2f2f2;
+        height: 60px;
+    }
+    .topRightIcons{
+        margin-right: 20px;
+       margin-top: 20px;
+        margin-left: 10px;
+       float: right; 
+}
+        a:hover, .chats:hover{
+            background-color: grey;
+        }
+    .chatColumns{
+            overflow: scroll;
+            background-color: white;
+            height:600px;
+            margin-top: 20px;
+    }
+    .searchcontacts{
+        width: 100%;
+        margin-left:auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-bottom: 0px;
+    }
+    .chats{
+            border-width: 1px;
+            border-style: solid;
+            border-left: 0px;
+            border-right: 0px;
+            border-bottom: 0px;
+            margin-top: 0px;
+            height: 70px;
+           position: relative;
+        }
+        .chaticon,.chatdetails{
+            height: 80%;
+            margin-top: 5%;
+            overflow: hidden;
+        }
+    .chaticon{
+        height: inherit;
+        float: left;
+        border-radius: 10px;                
+    }
+    #lastseen{
+        overflow: hidden;
+    }
+    .msgcount, .sendmsg{
+        float:right;
+    }   
+    
+    /* the border layout of the message box*/
+    .rightcontent{
+        padding:0;
+        margin: 0;
+        height: 600px;
+        
+    }
+    div{
+    }
+    #north{
+        margin: 0; padding: 1em; height: 90%; background-color: #02d1a4; background-image:url(wallp.png);
+    }#south{
+         margin: 0; padding: 0em; height: 10%; background-color: #f2f2f2
+    }
+    #south{
+        display: flex;
+        align-items: center;
+    }
+    .messageinput{
+        width: 100%;
+        height: 60%;
+        
+        border: 0px;
+    }
+    .inputconts{
+        height: 100%;
+    }
+    .smiley{
+        position: relative;
+        top:20%;
+    }
+    input.inputs, .sendmsg{
+        position: relative;
+        top: 30%;
+    }
+    
+</style>
+
+
+  <div class="row">
+    <div class="col-xs-3 topbarLeft">
+        <a href=""><img  src="grid.jpg" class="profile" id="profilepics"/></a>
+        <a href=""><img src="threesdots.jpg"class="topLeftIcons"/></a>
+        <a href=""><img src="msg.png" class="topLeftIcons"/></a>
+      </div>
+      
+      <div class="col-xs-9 topbarRight">
+          <a href=""><img  src="grid.jpg" class="profile" id="profilepics"/></a>
+          <i> Leo Smith</i>
+          <a href=""><img src="threesdots.jpg"class="topRightIcons"/></a>
+          <a href=""><img src="attachment%20.jpg"class="topRightIcons"/></a>
+          <a href=""><img src="search.jpg"class="topRightIcons"/></a>   
+</div>
+</div>
+    
+     <div class="row">
+    <div class="col-xs-3 chatColumns">
+        
+         <input type="search" placeholder="search" class="searchcontacts"/>
+        
+        
+         <div class="col-xs-12 chats">
+             <div class="row">
+             <div class="col-xs-3 chaticon"><img src="tar.jpg"/></div>
+             <div class="col-xs-4 chatdetails">
+            <p class="name">Leo</p>
+            <i > Call me please, I have been looking for a way to reach you for years now, please Call me please, I have been looking for a way to reach you for years now, please Call me please, I have been looking for a way to reach you for years now, please Call me please, I have been looking for a way to reach you for years now, please  </i>
+                 </div>
+                 <div class="col-xs-5 chatdetails">
+                 <p id="lastseen"> Yesterday</p>
+                 <p class="msgcount"> 23</p>
+                 </div>
+        </div>
+        
+      </div>
+        
+        
+         <div class="col-xs-12 chats">
+             <div class="row">
+             <div class="col-xs-3 chaticon"><img src="john.JPG"/></div>
+             <div class="col-xs-4 chatdetails">
+            <p class="name">Steve</p>
+            <i > Call me please, I have been looking for a way to reach you for years now, please Call me please, I have been looking for a way to reach you for years now, please Call me please, I have been looking for a way to reach you for years now, please Call me please, I have been looking for a way to reach you for years now, please  </i>
+                 </div>
+                 <div class="col-xs-5 chatdetails">
+                 <p id="lastseen">12 mins ago</p>
+                 <p class="msgcount"> 23</p>
+                 </div>
+        </div>
+        
+      </div>
+        
+         <div class="col-xs-12 chats">
+             <div class="row">
+             <div class="col-xs-3 chaticon"><img src="jon.jpg"/></div>
+             <div class="col-xs-4 chatdetails">
+            <p class="name">Jane</p>
+            <i > Call me please, I have been looking for a way to reach you for years now, please Call me please, I have been looking for a way to reach you for years now, please Call me please, I have been looking for a way to reach you for years now, please Call me please, I have been looking for a way to reach you for years now, please  </i>
+                 </div>
+                 <div class="col-xs-5 chatdetails">
+                 <p id="lastseen"> Last Month</p>
+                 <p class="msgcount"> 23</p>
+                 </div>
+        </div>
+        
+      </div>
+        
+         </div>
+      
+      <div class="col-xs-9 rightcontent">
+         <div id="north">
+          </div>
+          <div id="south">
+              <div class="col-xs-12">
+          <div class="row">
+              
+              <div class="col-xs-1 inputconts">
+                  <a href=""><img src="smiley.jpg" class="smiley inputs"/></a>
+              </div>
+              
+              <div class="col-xs-10 inputconts">
+              <input type="text" placeholder="Type a message..." class="messageinput inputs" />
+              </div>
+              
+              <div class="col-xs-1 inputconts" >
+                  <a href=""><img src="sendmessage.png" class="sendmsg inputs"/></a>
+              </div>
+              
+              </div>
+              </div>
+          </div>
+</div>
+</div>
+    
+    
+  
+</html>
