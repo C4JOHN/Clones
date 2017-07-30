@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Search your contacts</title>
+    <link href="libs/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    </head>
+    
+    <body>
+    <div class="container-fluid">
+        <style>
+    .container-fluid{
+        margin-top: 5%;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        
+        
+    }
+    .col-xs-8{
+        border-style: solid;
+        border-width: 1px;
+        border-color: grey;
+        border-left: 0px;
+            border-right: 0px;
+        width: 70%;
+    }
+            input{
+                width: 80%;
+                
+            }
+            .top{
+                margin-top: 10px;
+            }
+            button{
+                display: inline;
+                margin-left: 10px;
+            }
+            button:hover, li:hover{
+                background-color: green;
+            }
+            .deleteBtn{
+                float: right;
+            }
+            .searchBtn{
+                position: fixed;
+            }
+            .addContacts,.searchBtn{
+                float: right;
+                border-radius: 30px;
+            }
+            .addContacts{
+                margin-bottom: 10px;
+            }
+
+</style>
+        <div class="row">
+        <div class="col-xs-8">
+            <div class="top"><input type="text" placeholder="Start typing to search for contacts"/><button class="btn searchBtn ">Search</button></div>
+            <hr>
+            <div>
+                <h2> Contacts</h2>
+            <ul>
+                <li> John Dalton <img src="images/threesdots.jpg" class="deleteBtn">
+                <li> John Dalton <img src="images/threesdots.jpg" class="deleteBtn">
+                <li> John Dalton <img src="images/threesdots.jpg" class="deleteBtn">
+                <li> John Dalton <img src="images/threesdots.jpg" class="deleteBtn">
+                <li> John Dalton <img src="images/threesdots.jpg" class="deleteBtn">
+                    
+                </li>
+                </ul>
+                <button class="btn addContacts"> Add</button>
+            </div>
+            </div>
+        </div>
+        </div>
+    
+    </body>
+    
+</html>
